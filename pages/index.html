@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+     <link href="http://v3.bootcss.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	 <link href="../css/index.css" rel="stylesheet">
+
+	 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script>
+			function mOver(obj)
+			{
+				obj.className="active";
+				
+			}
+			function mOut(obj)
+			{
+					$(".active").removeClass();  
+			}
+			
+		</script>
+
+	
+  </head>
+<div class="bgimg">
+	<nav class="navbar bgnav " role="navigation">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" id="brandcolor" href="#">Hackathon</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav nav-pills ">
+			<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >首页</a></li>
+			<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >详细介绍</a></li>
+			<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >参加比赛</a></li>
+			<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >作品提交</a></li>
+			<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >作品展示</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav nav-pills navbar-right">
+			<li	role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#">戳我报名</a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="container" style="heigh:auto;">
+		<h1 style="text-align:center;color:#FFFFFF;text-shadow: 0 1px 2px rgba(0,0,0,0.6);font-size:100px;margin-top:120px;">SJTU Hackathon</h1>
+        <h4 style="text-align:center;color:#FFFFFF;font-size:25px;margin-top:25px;">Little Steps Make a Difference</h4>
+		<p style="text-align:center;margin-top:5px;">
+			 <a class="btn btn-lg btn-primary btn-shadow bs3-link" role="button" style="margin-top:10px;">Join Now!</a>
+		</p>
+		<p style="text-align:center;">
+			<a class="bs2-link"  style="text-decoration:none;cursor:pointer;" role="button" >上海交通大学网络信息中心</a>
+		</p>
+	</div>
+</div>
+
+<footer class="footer" style="margin:0;padding:2em;background:#222;min-height:10em;color:#aaa;text-align:center;">
+     <h4>SJTU Hackathon 2014</h4>
+      <p>© 2014 上海交通大学 网络信息中心 OmniLab</p>   
+
+     <p style="color:#666">Powered By Flask | MongoDB | Bootstrap</p>
+</footer>   
+
+</html>

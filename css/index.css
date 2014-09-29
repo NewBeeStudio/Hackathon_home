@@ -1,0 +1,90 @@
+.bgimg{
+	background-image:url(../images/top_.jpg);
+	background-size:1366px;
+	height:480px;
+	background-repeat:no-repeat;
+	background-position-y:-26px;
+	
+}/****top background pic****/
+
+
+/****part of nav begin****/
+.nav a{
+	color:#FFFFFF;
+	text-align:center;
+	border: 2px solid #fff;
+	border-radius: 0;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:8px;
+	height:35px;
+	background-color: transparent;
+	color: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+
+}
+
+.navbar-nav li a{
+	padding-top:6px;
+}
+
+.nav li{
+	margin-left:20px;
+	margin-right:10px;
+}
+
+
+.nav-pills li.active a:hover {
+	background-color: #428bca;
+}
+
+.container-fluid{
+	padding-left:100px;
+	padding-right:50px;
+}
+
+
+#brandcolor  {
+	color:#FFFFFF;
+}
+
+.nav{
+	height:50px;
+}
+
+.bgnav{
+	background-image:url(../images/top_.jpg);
+	background-size:100%;
+	background-image:no-repeat;
+	background-size:1366px;
+	background-position-y: -1px;
+}
+
+/****part of nav end****/
+
+
+/****part of top_context***/
+
+.btn{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.container p .bs2-link
+{
+	color: #565F5D;
+	text-shadow: 0 0 10px rgba(255,255,255,0.25);
+}
+
+.container p .bs2-link:hover
+{
+	color: #fff;
+	text-shadow: 0 0 10px rgba(255,255,255,0.25);
+}
+
+
+/*****end****/
