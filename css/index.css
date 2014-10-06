@@ -225,6 +225,7 @@ body {
 #info a{
 	display: inline-block;
 	text-decoration: none;
+	target: _blank;
 }
 
 #link1 {
@@ -243,7 +244,8 @@ footer {
 	padding: 2px;
 	background:#222;
 	min-height:3em;
-	color:#aaa;
+	background-color: white;
+	opacity: 0.4;
 	text-align:center;
 }
 

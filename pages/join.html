@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="description" content="SJTU, 新蜂工作室, hackathon, 黑客马拉松，报名表">
+	<meta name="author" content="Newbee Studio">
+	<meta name="viewpoint" content="width=divice-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="../css/join.css">
+	<link rel="stylesheet" type="text/css" href="http://v3.bootcss.com/dist/css/bootstrap.min.css">
+    <link href="http://v3.bootcss.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/index.css" rel="stylesheet">
+
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script>
+		function mOver(obj)
+		{
+			obj.className="active";
+			
+		}
+		function mOut(obj)
+		{
+				$(".active").removeClass();  
+		}
+		
+	</script>
+</head>
+<body>
+	<div class="nav-bar">
+		<nav class="navbar bgnav " role="navigation">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" id="brandcolor" href="#">Hackathon</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav nav-pills ">
+				<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >首页</a></li>
+				<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >详细介绍</a></li>
+				<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >参加比赛</a></li>
+				<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >作品提交</a></li>
+				<li role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#" >作品展示</a></li>
+			  </ul>
+			  <ul class="nav navbar-nav nav-pills navbar-right">
+				<li	role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="#">戳我报名</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</div>
+	<div class="form">
+		<div id="intro">Action speaks louder than words!</div>
+		<form class="form-horizontal" role="form">
+		   	<div class="form-group">
+		        <label for="name" class="col-sm-5 control-label">姓名：</label>
+		        <div class="col-sm-3">
+		        <input type="text" class="form-control" id="name" placeholder="">
+		    	</div>
+		    	<div class="col-sm-4 info"></div>
+		    </div>
+
+		    <div class="form-group">
+		   		<label for="sex" class="col-sm-5 control-label">性别：</label>
+	        	<label class="checkbox-inline">
+      				<input type="radio" name="optionsRadiosinline" class="checkbtn" value="option1" checked=""> 男
+      			</label>
+      			<label class="checkbox-inline">
+      				<input type="radio" name="optionsRadiosinline" class="checkbtn" value="option2"> 女
+   				</label>
+		    </div>
+
+		   	<div class="form-group">
+		        <label for="college" class="col-sm-5 control-label">学院：</label>
+		        <div class="col-sm-3">
+		        <input type="text" class="form-control" id="college" placeholder="">
+		    	</div>
+		    	<div class="col-sm-4 info"></div>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="grade" class="col-sm-5 control-label">年级：</label>
+		        <div class="col-sm-3">
+		        <input type="text" class="form-control" id="grade" placeholder="">
+		    	</div>
+		    	<div class="col-sm-4 info"></div>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="major" class="col-sm-5 control-label">专业：</label>
+		        <div class="col-sm-3">
+		        <input type="text" class="form-control" id="major" placeholder="">
+		    	</div>
+		    	<div class="col-sm-4 info"></div>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="tel" class="col-sm-5 control-label">手机：</label>
+		        <div class="col-sm-3">
+		        <input type="text" class="form-control" id="tel" placeholder="">
+		    	</div>
+		    	<div class="col-sm-4 info"></div>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="e-mail" class="col-sm-5 control-label">邮箱：</label>
+		        <div class="col-sm-3">
+		        <input type="text" class="form-control" id="e-mail" placeholder="">
+		    	</div>
+		    	<div class="col-sm-4 info"></div>
+		    </div>
+
+		   <div class="form-group">
+		      <div class="submit">
+		         <button type="submit" class="btn btn-default">提交</button>
+		      </div>
+		   </div>
+		</form>
+
+	</div>
+	<div class="footer">
+		<p>SJTU Hackathon 2014</p>
+	    <p>© 2014 上海交通大学 网络信息中心 OmniLab</p> 
+	</div>
+</body>
+
+
+</html>
