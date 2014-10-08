@@ -8,13 +8,14 @@ class JoinAction extends Action{
 		if(IS_POST){
 			$user = array(
 				'name' => I('name'),
-				'sex' => I('sex'),
+				'sex' => 1,
 				'college' => I('college'),
 				'grade' => I('grade'),
 				'major' => I('major'),
 				'tel' => I('tel'),
 				'e-mail' => I('e-mail')
 				);
+			if(I('sex')=='option2')$user['sex'] = 0;
 			M('user')->data($user)->add();
 
 		}
