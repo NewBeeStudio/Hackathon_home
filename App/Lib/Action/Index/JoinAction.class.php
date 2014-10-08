@@ -15,8 +15,15 @@ class JoinAction extends Action{
 				'tel' => I('tel'),
 				'e-mail' => I('e-mail')
 				);
-			if(I('sex')=='option2')$user['sex'] = 0;
-			M('user')->data($user)->add();
+			if(I('sex')=='option2'){
+				$user['sex'] = 0;
+			}
+			if(M('user')->data($user)->add()){
+				$this->redirect('Index/Member/index');
+			}
+			else{
+				$this->redirect('Index/Join/index');
+			}
 
 		}
 		else{
