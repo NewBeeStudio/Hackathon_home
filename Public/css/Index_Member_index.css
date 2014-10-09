@@ -133,10 +133,12 @@ hr {
 	padding-top: 5px;
 	margin-bottom: 30px;
 	width: 97%;
-	height: 200px;
+	height: 250px;
 	display: inline-block;
 	border: 3px groove rgba(20,20,20,0.1);
     box-shadow: 3px 3px 8px rgba(20,20,20,0.3);
+    word-wrap: break-word;
+    word-break:break-all;
 }
 .person span {
 	padding-top: 10px;
