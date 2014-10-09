@@ -7,7 +7,7 @@
 	}
 
 	function SendMail($address,$title,$message){
-		vendor('PHPMailer.class#PHPMailer');
+		vendor('PHPMailer.class#phpmailer');
 		$mail=new PHPMailer();
 		$mail->IsSMTP();
 		$mail->CharSet='UTF-8';
