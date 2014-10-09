@@ -35,9 +35,9 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  <ul class="nav navbar-nav nav-pills ">
 				<li role="presentation"><a href="{:U('Index/Index/index')}" >首页</a></li>
-				<li role="presentation"><a href="#" >详细介绍</a></li>
-				<li role="presentation"><a href="{:U('Index/Member/index')}" >参加比赛</a></li>
-				<li role="presentation"><a href="#" >作品展示</a></li>
+				<li role="presentation"><a href="{:U('Index/Detail/index')}" >详细介绍</a></li>
+				<li role="presentation"><a href="{:U('Index/Member/index')}" >参赛人员</a></li>
+				<li role="presentation"><a href="{:U('Index/Result/index')}" >作品展示</a></li>
 			  </ul>
 			  <ul class="nav navbar-nav nav-pills navbar-right">
 				<li	role="presentation" onmouseover="mOver(this)" onmouseout="mOut(this)"><a href="{:U('Index/Join/index')}">戳我报名</a></li>
@@ -48,46 +48,47 @@
 	</div>
 
 	<div id="main-img">
-		<h1>SJTU Hac<span style="font-family:'Gabriola'; font-size:140%;">k</span>athon</h1>
-        <h4>Little Steps Make a Difference</h4>
+		<h1>创客 工作坊</h1>
+		<h4>SJTU Hac<span style="font-family:'Gabriola'; font-size:140%;">k</span>athon</h4>
 		<a class="btn btn-lg btn-primary btn-shadow" role="button" style="margin-top: 40px" href="{:U('Index/Join/index')}">Join Now!</a>
 	</div>
 
 	<div id="main">
 		<div id="intro">
-			<h1>What's Hackathon?</h1>
-				<div id="intro-more">
-					<a href="#">
-						<img src="__PUBLIC__/img/more.gif" style="width:55px; margin-top:7px;"></img>
-					</a>
-				</div>
+			<p class='subtitle'>活动简介</p>
+			<hr>
 			<div id="intro-container">
-				<div class="block border">
+				<div class="block">
 					<h2><span id="easy-to-do">E</span>asy-to-do</h2>
-					<p class="first-line"><span>0</span> 基础玩单片机?当然可以！</p>
-					<p>一个个组件模块，在新蜂工作室大神们的努力下，被包装成简易可用的黑盒子...</p>
-					<p>只需要少量C/C++的基本编程知识，黑客马拉松的大门就为你敞开！</p>
+					<img src="__PUBLIC__/img/logo1.png" alt="" class="logo">
+					<p class="first-line"><span>0</span> 基础也能玩单片机?当然可以！</p>
+					<p>一个个组件模块，在新蜂工作室同学们的努力下，被包装成简易可用的黑盒子...</p>
+					<p>只需要少量C语言基本编程知识，黑客马拉松的大门就为你敞开！</p>
 				</div>
-				<div class="block border">
+				<div class="block">
 					<h2><span id="creative">C</span>reative</h2>
+					<img src="__PUBLIC__/img/logo2.png" alt="" class="logo">
 					<p class="first-line"><span>38</span> 种组件，数不清的组合方式！</p>
-					<p>你会用它们来做什么?火焰传感器、三色LED、自制继电器......任何</p>
+					<p>你会用它们来做什么?火焰传感器、三色LED、自制继电器...任何你能想到的创意</p>
 					<p>如果你有很棒的创意，或是想尝试新鲜事事物，它们就为你开放！</p>
 				</div>
 				<div class="block">
 					<h2><span id="exciting">E</span>xciting</h2>
-					<p class="first-line"><span>48</span> 小时的时间，可以做什么?</p>
-					<p>在宿舍教室和食堂来回跑动，就和往常一样?</p>
-					<p>或是尝试一种全新的体验?</p>
-					<p>在黑客马拉松这项活动里，你将体验急速开发，一步步实现自己创意的快感！</p>
+					<img src="__PUBLIC__/img/logo3.png" alt="" class="logo">
+					<p class="first-line"><span>48</span> 小时的时间，可以用来做些什么?</p>
+					<p>在宿舍教室和食堂之间两点一线，就和往常一样？或是尝试一种全新的体验?</p>
+					<p>在黑客马拉松这项活动里，你将体验急速开发，感受一步步实现自己创意的快感！</p>
 				</div>
 			</div>
 		</div>
 		<div id="info">
-			<p>支持单位</p>
-			<a href="http://newbee.io" class="btn btn-primary btn-shadow bs3-link" id="link1" target="_blank">新蜂工作室</a>
-			<a href="http://net.sjtu.edu.cn" class="btn btn-warning btn-shadow bs3-link" id="link2" target="_blank">交大网络信息中心</a>
-			<a href="http://www.arduino.cn" class="btn btn-danger btn-shadow bs3-link" id="link3" target="_blank">Arduino</a>
+			<p class='subtitle'>举办单位</p>
+			<hr>
+			<div class="support">
+				<a href="http://newbee.io" target='_blank'><img class='supporter' src="__PUBLIC__/img/newbee.png">新蜂工作室</a>
+				<a href="http://net.sjtu.edu.cn" target='_blank'><img class='supporter' src="__PUBLIC__/img/omnilab.png">交大网络信息中心</a>
+				<a href="http://page.renren.com/600756845" target='_blank'><img class='supporter' src="__PUBLIC__/img/union.jpg">交大电院学生会</a>
+			</div>
 		</div>
 	</div>
 
